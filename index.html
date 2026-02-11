@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiayi Lin - Personal Homepage</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 30px 60px;
+      background: #fff;
+      min-height: 100vh;
+    }
+    a { color: #4a90e2; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Profile */
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+    .profile img {
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #4a90e2;
+    }
+    .profile-info { flex: 1; min-width: 250px; }
+    .profile-info h1 { font-size: 2.2em; color: #4a90e2; margin-bottom: 8px; }
+    .profile-info p { font-size: 1.05em; line-height: 1.4; margin: 2px 0; }
+
+    /* Section */
+    .section { margin-top: 32px; }
+    .section h2 {
+      font-size: 1.5em;
+      color: #333;
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    /* Experience & Education */
+    .item { margin-bottom: 16px; }
+    .item .title { font-weight: bold; font-size: 1.05em; }
+    .item .detail { color: #555; margin-top: 2px; }
+
+    /* Publications */
+    .pub { margin-bottom: 18px; }
+    .pub .pub-title { font-weight: bold; font-size: 1.02em; }
+    .pub .pub-authors { margin-top: 2px; color: #444; }
+    .pub .pub-venue { margin-top: 2px; color: #555; }
+    .pub .pub-venue strong { color: #333; }
+    .pub .highlight { color: #c0392b; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- About Me -->
+    <div class="profile">
+      <img src="img/ljy.jpg" alt="Profile Photo">
+      <div class="profile-info">
+        <h1>Jiayi Lin (林嘉怡)</h1>
+        <p>AI Researcher</p>
+        <p>Tencent</p>
+        <p>Shenzhen, China</p>
+        <p>Email: jiayilin1024@gmail.com</p>
+        <p><a href="https://scholar.google.com/citations?user=YqBpkvIAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+      </div>
+    </div>
+
+    <!-- Work Experiences -->
+    <div class="section">
+      <h2>Work Experiences</h2>
+
+      <div class="item">
+        <div class="title">Researcher, Tencent, 2025.06 - Present</div>
+        <div class="detail">Working Area: large language model, code intelligence, code agent</div>
+      </div>
+
+      <div class="item">
+        <div class="title">Algorithm Engineer, Thin Red Line, 2024.07 - 2025.03</div>
+        <div class="detail">Working Area: agent, prompt engineering, post-training</div>
+      </div>
+
+      <div class="item">
+        <div class="title">Algorithm Engineer, International Digital Economy Academy, 2021.07 - 2024.07</div>
+        <div class="detail">Working Area: code understanding and generation, pretrained language model, large language model</div>
+      </div>
+    </div>
+
+    <!-- Publications -->
+    <div class="section">
+      <h2>Selected Publications</h2>
+
+      <div class="pub">
+        <div class="pub-title">Towards Better Code Understanding in Decoder-Only Models with Contrastive Learning</div>
+        <div class="pub-authors"><strong>Jiayi Lin</strong>, Yanlin Wang, Yibiao Yang, Lei Zhang, Yutao Xie</div>
+        <div class="pub-venue"><strong>AAAI 2026, CCF-A</strong> &middot; <a href="https://arxiv.org/pdf/2406.12326?" target="_blank">[paper]</a></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Towards to Real World Vehicle Privacy Protection: A New Dataset and Benchmark</div>
+        <div class="pub-authors"><strong>Jiayi Lin</strong>, Chengming Zou, Long Lan, Yong Luo, Yue Yu, Yaowei Wang, Wei Zeng, Yonghong Tian</div>
+        <div class="pub-venue"><strong>Pattern Recognition 2025, CCF-B</strong> &middot; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320325005783" target="_blank">[paper]</a></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Scaling Laws Behind Code Understanding Model</div>
+        <div class="pub-authors"><strong>Jiayi Lin</strong>, Hande Dong, Yutao Xie, Lei Zhang</div>
+        <div class="pub-venue"> &middot; <a href="https://arxiv.org/pdf/2402.12813.pdf" target="_blank">[paper]</a></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Improving Code Search with Hard Negative Sampling Based on Fine-tuning</div>
+        <div class="pub-authors">Hande Dong, <strong>Jiayi Lin</strong>, Yanlin Wang, Yichong Leng, Jiawei Chen, Yutao Xie</div>
+        <div class="pub-venue"><strong>APSEC 2024, CCF-C</strong>, Co-first author &middot; <a href="https://arxiv.org/pdf/2305.04508" target="_blank">[paper]</a></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Survey of Code Search Based on Deep Learning</div>
+        <div class="pub-authors">Yutao Xie, <strong>Jiayi Lin</strong>, Hande Dong, Lei Zhang, Zhonghai Wu</div>
+        <div class="pub-venue"><strong>TOSEM 2023, CCF-A</strong> &middot; <a href="https://arxiv.org/pdf/2305.05959.pdf" target="_blank">[paper]</a></div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <h2>Education</h2>
+
+      <div class="item">
+        <div class="title">[2018.9 - 2021.6] M.E. in Wuhan University of Technology (Whut)</div>
+        <div class="detail">Wuhan, Hubei</div>
+      </div>
+
+      <div class="item">
+        <div class="title">[2014.9 - 2018.6] B.E. in Wuhan Institute of Technology (WIT)</div>
+        <div class="detail">Wuhan, Hubei</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
